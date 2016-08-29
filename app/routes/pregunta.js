@@ -32,5 +32,6 @@ export default Ember.Route.extend({
       pregunta.save();
       this.transitionTo('index');
     },
+  
   }
 });

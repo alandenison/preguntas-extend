@@ -1,0 +1,7 @@
+<ul>para contestar:
+{{#each answerLater.items as |item|}}
+  <li>¿ya tiene una respuesta para la pregunta de {{#link-to 'pregunta' item.id}}{{item.usuario}}?{{/link-to}}
+    <button class="btn btn-sm btn-danger"{{action "removeLater" item}}>borrar</button>
+  </li>
+{{/each}}
+</ul>
