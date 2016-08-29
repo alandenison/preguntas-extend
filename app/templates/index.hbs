@@ -2,7 +2,7 @@
 <h2>Preguntas abiertas</h2>
 <ul>
   {{#each model.preguntas as |pregunta|}}
-     <li>{{#link-to 'pregunta' pregunta.id}} {{pregunta.usuario}} preguntó: {{pregunta.consulta}}{{/link-to}}</li>
+     <li>{{#link-to 'pregunta' pregunta.id}} {{pregunta.usuario}} preguntó: {{pregunta.consulta}}{{/link-to}}{{sin-respuesta pregunta}}</li>
   {{/each}}
 </ul>
 
